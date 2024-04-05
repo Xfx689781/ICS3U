@@ -22,11 +22,11 @@ console.log("\n");
 console.log("HERE IS MY BONUS TASK!!!")
 let num = prompt("Please type a positive integer there!!! Here I can tell you whether it is a prime number or not!!!");
 function Prime() {
-    for (let i = 2; i <= num; i++) {
+    for (let i = 2; i <= num; i++) { //to determine whether i is its factor or not
       if (number % i === 0) {
         return false;
       }
     }
-    return true;
+    return true; //if the number can be divided by any positive integer, it is prime.
   }
   console.log(Prime(num));
