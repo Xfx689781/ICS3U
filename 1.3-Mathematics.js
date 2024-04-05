@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')();
+console.log("1.3 - Mathematics");
 let celsius = 100; //This is the third assignment, which includes four different tasks. This is the first task, where we convert degrees Celsius to Fahrenheit and output the Fahrenheit value.
 let fahrenheit = 0; //We set the value of Fahrenheit to be 0 at first in order to declare the variable.
 celsius += 2; //We add 2 to the original Celsius value, where "x += y" means to add y to x. Now the value of Celsius is 102. 
@@ -17,4 +19,14 @@ let y2 = 0; //Assign a value for y2.
 let m = (y2 - y1)/(x2 - x1); //Assign an equation for m (slope).
 console.log("Last Part: the value of m is: "+m); //Output a sentence to show the slope value.
 console.log("\n");
-
+console.log("HERE IS MY BONUS TASK!!!")
+let num = prompt("Please type a positive integer there!!! Here I can tell you whether it is a prime number or not!!!");
+function Prime() {
+    for (let i = 2; i <= num; i++) {
+      if (number % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+  console.log(Prime(num));
