@@ -1,0 +1,82 @@
+<html>
+<head>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">   
+   <style>
+      /* To-do: Insert CSS here */
+  h1 {
+      font-family: 'poiret one', cursive;
+      color: #4286f4;
+  } 
+  </style>
+</head>  
+<h1>1.4 User Input</h1>
+<body    style="background-color:powderblue;" ></body>
+
+<body>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">   
+   <style>
+      /* To-do: Insert CSS here */
+  body {
+      font-family: '', cursive;
+      color: #237c15;
+  } 
+  </style>
+Let's get started!!!<br><br>
+<script>
+    
+    function provide() {
+      var ayear = document.getElementById('year').value;
+      var aname = document.getElementById('name').value;
+      var afahrenheit = document.getElementById('fahrenheit').value;
+  
+      if(aname == ""){
+          alert("Please provide a name.");
+          return false;
+      }
+      
+      if(ayear == ""){
+          alert("Please provide a year of born.");
+          return false;
+      }
+      
+      if(afahrenheit==""){
+        alert("Please provide a Fahrenheit temperature.");
+          return false;
+      }
+        if(aname !=""){
+          alert("Hi "+aname+"!");
+          alert("Your name is "+aname.length+" letters long.");
+         }
+         if(ayear !="") {
+          alert("You entered "+ayear);
+          alert("You are likely "+(2024-ayear)+" years old.");
+        }
+
+         if(afahrenheit !=""){
+            let celsius = (afahrenheit - 32) * 5/9;
+            alert(afahrenheit+" degrees Fahrenheit equals to "+celsius+" degrees Celsius.");
+
+      }    
+    }  
+
+</script>
+
+<form action="#" method="post" id="delInfo">
+  Year of Born:<br>
+  <input type="number" name="year" id="year"><br><br>
+  Your Name:<br>
+  <input type="text" name="name" id="name"></br><br>
+  
+  Please input a fahrenheit temperature:<br>
+  <input type="number" name="fahrenheit" id="fahrenheit"></br><br>
+ 
+  <input type="submit" onClick="provide()" value="submit">
+</form>
+    
+</body>
+</html>
