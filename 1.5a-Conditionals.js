@@ -34,7 +34,7 @@ if(length<name.length){
 if(length==name.length){
     console.log("✔️ CORRECT! YOU ARE A GENIUS!");
 }
-console.log("\nHere comes MY BONUS TASK!!! There, we input the test mark for each of them, and it will tell you the average mark and the highest mark!");
+console.log("\nHere comes MY BONUS TASK!!! There, we input the test mark for each of them, and it will tell you the average, the highest and the lowest marks, as well as the percentages!");
     const total = parseInt(prompt("Enter the total number of students: "));
     const totalm = parseInt(prompt("Enter the total mark of the test: "));
     let highest = Number.MIN_VALUE;
