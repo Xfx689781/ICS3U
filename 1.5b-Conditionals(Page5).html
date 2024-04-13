@@ -1,0 +1,131 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+   <style>
+
+  h1 {
+      font-family: 'sedan', cursive;
+      color: #124aa3;
+  } 
+  </style>
+</head>  
+<h1>1.5b - Conditionals (Part 2)</h1>
+<body    style="background-color:rgb(250, 136, 107);" ></body>
+
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+   <style>
+      /* To-do: Insert CSS here */
+  body {
+      font-family: 'sedan', cursive;
+      color: #18610c;
+  } 
+  h2{
+    font-family: 'sedan', cursive;
+      color: #e23409;
+  }
+  </style>
+  <h2>
+    Page 05
+    </h2>
+  <h3>
+  Here is my BONUS TASK!
+  <br>Welcome to the number guessing game!
+  <br>
+  </h3>
+<script>
+ 
+ 
+function generateA(){
+  let num = Math.random() * 100;     // Get a single-digit value (with decimals)
+
+  let new_num = Math.floor(num);
+  let guess=-7;
+  guess=prompt("Please guess the number from 0 to 99");
+  while(guess!=new_num){
+    if(guess<new_num){
+      alert("Your guessing value is too low. TRY AGAIN!")
+    }
+    if(guess>new_num){
+      alert("Your guessing value is too high. TRY AGAIN!")
+    }
+  guess=prompt("Please guess the number!");
+ }
+ alert("You are correct! The number is "+new_num)
+}
+
+function generateB(){
+  let num = Math.random() * 1000;     // Get a single-digit value (with decimals)
+
+  let new_num = Math.floor(num);
+  let guess=-9;
+  
+  for(var k=15;k--;){
+    guess=prompt("Please guess the number from 0 to 999");
+    if(guess<new_num){
+      alert("Your guessing value is too low. TRY AGAIN!")
+      alert("You remain "+k+" times to guess")
+    }
+    if(guess>new_num){
+      alert("Your guessing value is too high. TRY AGAIN!")
+      alert("You remain "+k+" times to guess")
+    }
+ if(guess==new_num){
+  alert("You are correct! The number is "+new_num)
+  alert("You guessed for "+(15-k)+" times")
+  return false;
+ }
+ if(k==0){
+  alert("Sorry, you lose the game! ")
+  return false;
+ }
+ }
+
+}
+
+function generateC(){
+  let num = Math.random() * 10000;     // Get a single-digit value (with decimals)
+
+  let new_num = Math.floor(num);
+  let guess=-1;
+ 
+  for(var k=12;k--;){
+    guess=prompt("Please guess the number from 0 to 9999");
+    if(guess<new_num){
+      alert("Your guessing value is too low. TRY AGAIN!")
+      alert("You remain "+k+" times to guess")
+    }
+    if(guess>new_num){
+      alert("Your guessing value is too high. TRY AGAIN!")
+      alert("You remain "+k+" times to guess")
+    }
+ if(guess==new_num){
+  alert("You are correct! The number is "+new_num)
+  alert("You guessed for "+(12-k)+" times")
+  return false;
+ }
+ if(k==0){
+  alert("Sorry, you lose the game! ")
+  return false;
+ }
+ }
+
+ 
+}
+</script>
+
+<form action="#" method="post" id="delInfo">
+<input type="submit" onClick="generateA()" value="Easy Mode">
+ <input type="submit" onClick="generateB()" value="Classic Mode">
+<input type="submit" onClick="generateC()" value="Hard Mode">
+</form>
+<form action="1.5b-Conditionals(Page1).html">
+  <input type="submit" value="Back to Page 01"" id="Back to Page 01">
+</form>
+
+</body>
+</html>

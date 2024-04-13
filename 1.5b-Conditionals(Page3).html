@@ -1,0 +1,81 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+   <style>
+
+  h1 {
+      font-family: 'sedan', cursive;
+      color: #124aa3;
+  } 
+  </style>
+</head>  
+<h1>1.5b - Conditionals (Part 2)</h1>
+<body    style="background-color:rgb(248, 208, 76);" ></body>
+
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+   <style>
+      /* To-do: Insert CSS here */
+  body {
+      font-family: 'sedan', cursive;
+      color: #18610c;
+  } 
+  </style>
+  <h3>
+  Here is my "optional challenge" 01:
+  <br><br>
+  </h3>
+<script>
+  
+    function provide() {
+      var aselection = document.getElementById('selection').value;
+      var aname = document.getElementById('name').value;
+      if(aselection==""){
+          alert("Please input a hour from 0 to 23. Only the hour, not the minute!");
+          return false;
+      }
+      if(aselection>=0&&aselection<=11){
+          alert("Hi "+aname+"! Good morning!");
+       
+      }
+      
+      if(aselection>=12&&aselection<=17){
+        alert("Hi "+aname+"! Good afternoon!");
+      
+       
+      }
+      
+      if(aselection>=18&&aselection<=23){
+        alert("Hi "+aname+"! Good evening!");
+      
+      }
+    
+
+      if(aselection<0&&aselection>23){
+          alert("Invalid value.");
+       
+      }
+    
+
+      
+    }  
+
+</script>
+
+<form action="#" method="post" id="delInfo">
+Please enter an hour between 0-23:<br>
+  <input type="number" name="selection" id="selection"><br><br>
+  
+  <input type="submit" onClick="provide()" value="submit">
+</form>
+</form>
+<form action="1.5b-Conditionals(Page3).html">
+  <input type="submit" value="next" id="next">
+</form>
+
+</body>
+</html>

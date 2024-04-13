@@ -1,0 +1,72 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+   <style>
+
+  h1 {
+      font-family: 'sedan', cursive;
+      color: #124aa3;
+  } 
+  </style>
+</head>  
+<h1>1.5b - Conditionals (Part 2)</h1>
+<body    style="background-color:rgb(248, 208, 76);" ></body>
+
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+   <style>
+      /* To-do: Insert CSS here */
+  body {
+      font-family: 'sedan', cursive;
+      color: #18610c;
+  } 
+  h2{
+    font-family: 'sedan', cursive;
+      color: #e23409;
+  }
+  </style>
+  <h2>
+    Page 04
+    </h2>
+  <h3>
+  Here is my "optional challenge" 02:
+  <br><br>
+  </h3>
+<script>
+ 
+ function generate(){
+  let num = Math.random() * 10;     // Get a single-digit value (with decimals)
+
+  let new_num = Math.floor(num);
+  if (new_num == 0) {
+      alert("The value is 0.");
+    }
+    if (new_num % 2 == 0) {
+      alert("The value is even.");
+    } 
+     if (new_num==2||new_num==3||new_num==5||new_num==7) {
+      alert("The value is prime.");
+   
+    } 
+    if (new_num % 2 == 0 && new_num % 3 == 0) {
+      alert("The value is divisible by 2 and 3.");
+    }
+ 
+    alert("The number is "+new_num)
+ }
+   
+</script>
+
+<form action="#" method="post" id="delInfo">
+  <input type="submit" onClick="generate()" value="generate a random number between 0 and 9">
+</form>
+<form action="1.5b-Conditionals(Page5).html">
+  <input type="submit" value="next" id="next">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+   <style>
+
+  h1 {
+      font-family: 'sedan', cursive;
+      color: #124aa3;
+  } 
+  </style>
+</head>  
+<h1>1.5b - Conditionals (Part 2)</h1>
+<body    style="background-color:rgb(188, 248, 76);" ></body>
+
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+   <style>
+      /* To-do: Insert CSS here */
+  body {
+      font-family: 'sedan', cursive;
+      color: #18610c;
+  } 
+  h2{
+    font-family: 'sedan', cursive;
+      color: #e23409;
+  }
+  </style>
+  <h2>
+    Page 01
+    </h2>
+
+  <h3>
+   Let's get started!!!<br><br>
+</h3>
+<script>
+    
+    function provide() {
+      var aage = document.getElementById('age').value;
+      var aname = document.getElementById('name').value;
+      
+      if(aname == ""){
+          alert("Please provide a name.");
+          return false;
+      }
+      
+      if(aage == ""||aage<=0){
+          alert("Please provide an age that is larger than 0.");
+          return false;
+      }
+      
+      if(aname!=""&&aage!=""&&aage>=16){
+        alert("Congratulations, "+aname+"! You are able to drive!!!");
+      
+    }
+      if(aname!=""&&aage!=""&&aage<=16&&aage>0){
+        alert("Oh no, "+aname+"! You are not able to drive yet!!!");
+      }
+
+      localStorage.setItem('aname');
+    }  
+
+</script>
+
+<form action="#" method="post" id="delInfo">
+  Your Age:<br>
+  <input type="number" name="age" id="age"><br><br>
+  Your Name:<br>
+  <input type="text" name="name" id="name"></br><br>
+  
+  <input type="submit" onClick="provide()" id="submit" value="submit">
+
+  
+</form>
+<form action="1.5b-Conditionals(Page2).html">
+  <input type="submit" value="next" id="next">
+</form>
+
+
+</body>
+</html>
